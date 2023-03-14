@@ -5,7 +5,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 nav {
@@ -35,24 +34,37 @@ h1 {
     letter-spacing: 6px;
 }
 
-.work-img-container img {
-    width: 80%;
-    height: auto;
-    padding: 10px;
+h2 {
+    letter-spacing: 6px;
 }
 
-ul {
-   list-style-type: none; 
-   margin: 0;
-   padding: 0;
-}
-
-li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    font-size: 1.1em;
-}
-
-li:last-child {
-    margin-bottom: 15px;
-}
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .work-title {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  .work-img-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .parent {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
